@@ -1,0 +1,29 @@
+mat-toolbar {
+  
+    .logo {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+  
+    .menu-items {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: white; // o qualsiasi altro colore desideri
+      }
+    }
+  
+    .cta-button {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+<mat-toolbar class="d-flex justify-content-between" color="primary">
+    <!-- Logo sulla sinistra -->
+    <span class="logo">
+      <img src="path-to-your-logo.png" alt="Logo" width="50">
+    </span>
+  
+    <!-- Pagine del sito al centro -->
+    <span class="menu-items d-none d-md-flex">
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <!-- Aggiungi altre pagine come desideri -->
+    </span>
+  
+    <!-- Bottone CTA sulla destra -->
+    <span class="cta-button">
+      <button mat-icon-button class="d-block d-md-none" color="accent" (click)="clickMenu()">
+          <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-raised-button color="accent">CTA Button</button>
+    </span>
+  </mat-toolbar>
+  

@@ -1,2 +1,22 @@
-<div>Ciao sono io</div>
-<router-outlet></router-outlet>
+<mat-drawer-container class="container-general" autosize>
+    <mat-drawer #drawer class="container-general__menu-mobile" mode="over">
+        <div class="d-flex justify-content-between">
+            <div>
+                <span class="container-general__menu-mobile__menu-items d-flex flex-column">
+                    <a href="/home">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/services">Services</a>
+                  </span>
+            </div>
+            <div (click)="drawer.toggle()">
+                <button mat-icon-button class="d-block d-md-none" color="accent">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </div>
+        </div>
+    </mat-drawer>
+    <div class="container-general__content">
+        <app-menu (isOpenMenuEmitter)="drawer.toggle()"></app-menu>
+        <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
