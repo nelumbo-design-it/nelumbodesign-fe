@@ -1,0 +1,94 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #DD4242; /* Colore del cerchio, puoi personalizzarlo */
+  border-radius: 50%; /* Rende il div un cerchio */
+  animation: pulse 2s infinite; /* Applica l'animazione */
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 10px;
+  }
+  50% {
+    width: 70px;
+  }
+  100% {
+    width: 10px;
+  }
+}
+
+.animated-line {
+  display: inline-block;
+  height: 3px; /* Spessore della linea */
+  background-color: #3498db; /* Colore della linea, puoi personalizzarlo */
+  animation: lineAnimation 2s infinite; /* Applica l'animazione */
+  border-radius: 5px;
+}
+
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    90% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.play-icon-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.pulse {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: rgba(219, 52, 194, 0.7); /* Colore di sfondo della pulsazione */
+    animation: pulseAnimation 2s infinite;
+    z-index: -2;
+}
+
+.icon-background {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(48, 126, 48, 0.7); /* Colore di sfondo dell'icona */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.play-icon {
+    font-size: 24px;
+    color: white; /* Colore dell'icona */
+}
