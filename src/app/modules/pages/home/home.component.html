@@ -1,1 +1,46 @@
-<app-header></app-header>
+<header class="bg-blue text-white">
+    <app-header></app-header>
+</header>
+<main class="bg-blue text-white">
+    <section>
+        <div class="d-flex justify-content-center container-card-services">
+            <div class="container-card-services__card d-flex col-md-4 p-3">
+                <div class="p-3">
+                    <img src="../../.././../assets/images/test/icons8-google-code.svg" alt="">
+                </div>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Advanced Tools</h4>
+                    <p>Scelerisque viverra mauris in aliquam sem fringilla ut.</p>
+                </div>
+            </div>
+            <div class="container-card-services__card d-flex col-md-4 p-3">
+                <div class="p-3">
+                    <img src="../../.././../assets/images/test/icons8-google-drive.svg" alt="">
+                </div>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Advanced Tools</h4>
+                    <p>Scelerisque viverra mauris in aliquam sem fringilla ut.</p>
+                </div>
+            </div>
+            <div class="container-card-services__card d-flex col-md-4 p-3">
+                <div class="p-3">
+                    <img src="../../.././../assets/images/test/icons8-google-images.svg" alt="">
+                </div>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Advanced Tools</h4>
+                    <p>Scelerisque viverra mauris in aliquam sem fringilla ut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <app-title-section [text1]="'Gallery'" [text2]="'Our Project Portfolio'"></app-title-section>
+    </section>
+    <section>
+        <div class="d-flex pb-5">
+            <app-sample-card class="col-4"></app-sample-card>
+            <app-sample-card class="col-4"></app-sample-card>
+            <app-sample-card class="col-4"></app-sample-card>
+        </div>
+    </section>
+</main>

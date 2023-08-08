@@ -92,3 +92,33 @@
     font-size: 24px;
     color: white; /* Colore dell'icona */
 }
+
+.line-static-left {
+  position: relative;
+  &::before {
+    content: '';
+    position: relative;
+    width: clamp(1.25rem, 0.9164rem + 1.8405vw, 3.125rem);
+    height: 2px;
+    background-color: #B5B5B5;
+    display: block;
+    left: 0;
+    right: auto;
+    margin-right: 15px;
+  }
+}
+
+.line-static-right {
+  position: relative;
+  &::before {
+    content: '';
+    position: relative;
+    width: clamp(1.25rem, 0.9164rem + 1.8405vw, 3.125rem);
+    height: 2px;
+    background-color: #B5B5B5;
+    display: block;
+    right: 0;
+    left: auto;
+    margin-left: 15px;
+  }
+}
