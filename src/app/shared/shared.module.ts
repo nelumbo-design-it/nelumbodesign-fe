@@ -8,6 +8,7 @@ import { MatListModule } from '@angular/material/list';
 import { ButtonAnimationComponent } from './components/button-animation/button-animation.component';
 import { TitleSectionComponent } from './components/title-section/title-section.component';
 import { SampleCardComponent } from './components/sample-card/sample-card.component';
+import { ProjectSectionComponent } from './components/project-section/project-section.component';
 
 
 
@@ -16,7 +17,8 @@ import { SampleCardComponent } from './components/sample-card/sample-card.compon
   declarations: [
     ButtonAnimationComponent,
     TitleSectionComponent,
-    SampleCardComponent
+    SampleCardComponent,
+    ProjectSectionComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { SampleCardComponent } from './components/sample-card/sample-card.compon
     MatListModule,
     ButtonAnimationComponent,
     TitleSectionComponent,
-    SampleCardComponent
+    SampleCardComponent,
+    ProjectSectionComponent
   ]
 })
 export class SharedModule { }

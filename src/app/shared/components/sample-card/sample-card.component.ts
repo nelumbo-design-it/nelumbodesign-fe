@@ -9,5 +9,11 @@ export class SampleCardComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() imageBC: string = 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-2.jpg';
-  @Input() isFullHover: boolean = true;
+  @Input() route: string = '';
+
+  constructor(){}
+
+  public goToRoute(): void {
+    console.log('clicked go route');
+  }
 }

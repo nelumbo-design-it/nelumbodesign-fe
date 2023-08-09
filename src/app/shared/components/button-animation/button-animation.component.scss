@@ -1,63 +1,62 @@
 .cta-container {
-    position: relative;
-    width: 200px;
-    height: 40px;
-    border: 1px solid transparent;
-    overflow: hidden;
-    background-color: #111319;
-  }
-  
-  .cta-line {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 50%;
-    height: 2px;
-    background-color: white;
-    transition: width 0.4s;
-    z-index: 1;
-  }
-  
-  .cta-text {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    color: white;
-    transition: color 0.4s, right 0.4s;
-    z-index: 2;
-    background-color: #111319;
-    padding-left: 20px;
-    width: 120px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .cta-dot {
-    position: absolute;
-    top: 50%;
-    left: 36%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #DD4242;
-    transition: background-color 0.4s, left 0.4s;
-    z-index: 3;
-  }
-  
-  .cta-container:hover .cta-line {
-    width: 100%;
-  }
-  
-  .cta-container:hover .cta-text {
-    right: 40%;
-    color: #DD4242;
-  }
-  
-  .cta-container:hover .cta-dot {
-    left: 0;
-    background-color: white;
-  }
-  
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border: 1px solid transparent;
+  overflow: hidden;
+  background-color: #111319;
+}
+
+.cta-line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s;
+  z-index: 1;
+}
+
+.cta-text {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: white;
+  transition: color 0.4s, right 0.4s;
+  z-index: 2;
+  background-color: #111319;
+  padding-left: 20px;
+  width: 120px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cta-dot {
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #dd4242;
+  transition: background-color 0.4s, left 0.4s;
+  z-index: 3;
+}
+
+.cta-container:hover .cta-line {
+  width: 100%;
+}
+
+.cta-container:hover .cta-text {
+  right: 40%;
+  color: #dd4242;
+}
+
+.cta-container:hover .cta-dot {
+  left: 0;
+  background-color: white;
+}

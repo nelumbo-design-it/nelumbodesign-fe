@@ -9,5 +9,4 @@ export class ButtonAnimationComponent {
   @Input() label: string = '';
   @Input() route: string = '';
   @Input() width: string = '';
-
 }
