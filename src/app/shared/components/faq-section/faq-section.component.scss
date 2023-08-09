@@ -1,0 +1,15 @@
+:host ::ng-deep {
+    .mat-expansion-panel {
+        background-color: transparent;
+    }
+    .mat-expansion-panel-header-title,
+    .mat-expansion-panel-body {
+        color: white;
+    }
+    .mat-expansion-indicator {
+        color: white;
+        &::after {
+            color: white;
+        }
+    }
+}

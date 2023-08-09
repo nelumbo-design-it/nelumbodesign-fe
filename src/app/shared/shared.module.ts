@@ -9,7 +9,8 @@ import { ButtonAnimationComponent } from './components/button-animation/button-a
 import { TitleSectionComponent } from './components/title-section/title-section.component';
 import { SampleCardComponent } from './components/sample-card/sample-card.component';
 import { ProjectSectionComponent } from './components/project-section/project-section.component';
-
+import { FaqSectionComponent } from './components/faq-section/faq-section.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 
@@ -18,7 +19,8 @@ import { ProjectSectionComponent } from './components/project-section/project-se
     ButtonAnimationComponent,
     TitleSectionComponent,
     SampleCardComponent,
-    ProjectSectionComponent
+    ProjectSectionComponent,
+    FaqSectionComponent
   ],
   imports: [
     CommonModule,
@@ -27,6 +29,7 @@ import { ProjectSectionComponent } from './components/project-section/project-se
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatExpansionModule
   ], 
   exports: [
     MatToolbarModule,
@@ -37,7 +40,9 @@ import { ProjectSectionComponent } from './components/project-section/project-se
     ButtonAnimationComponent,
     TitleSectionComponent,
     SampleCardComponent,
-    ProjectSectionComponent
+    ProjectSectionComponent,
+    FaqSectionComponent,
+    MatExpansionModule
   ]
 })
 export class SharedModule { }
