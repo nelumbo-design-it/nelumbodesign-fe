@@ -63,6 +63,20 @@
     </section>
     <section>
         <app-title-section [text1]="'FAQ\'s'" [text2]="'Our Expert Answers'"></app-title-section>
-        <app-faq-section></app-faq-section>
+        <div class="d-flex align-items-center position-relative justify-content-end">
+            <app-faq-section class="container-img-section col-6 position-absolute"></app-faq-section>
+            <div class="container-img-faq overflow-hidden col-6">
+                <img src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Home-1-Faq-Bg-Img-Ps.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <app-title-section [text1]="'Client Feedback'" [text2]="'Happy Words From Happy Customer'"></app-title-section>
+        <div class="d-flex flex-wrap">
+            <app-testimonial-card class="col-12 col-md-6"></app-testimonial-card>
+            <app-testimonial-card class="col-12 col-md-6"></app-testimonial-card>
+            <app-testimonial-card class="col-12 col-md-6"></app-testimonial-card>
+            <app-testimonial-card class="col-12 col-md-6"></app-testimonial-card>
+        </div>
     </section>
 </main>

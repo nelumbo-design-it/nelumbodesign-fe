@@ -11,7 +11,8 @@ import { SampleCardComponent } from './components/sample-card/sample-card.compon
 import { ProjectSectionComponent } from './components/project-section/project-section.component';
 import { FaqSectionComponent } from './components/faq-section/faq-section.component';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     TitleSectionComponent,
     SampleCardComponent,
     ProjectSectionComponent,
-    FaqSectionComponent
+    FaqSectionComponent,
+    TestimonialCardComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatGridListModule
   ], 
   exports: [
     MatToolbarModule,
@@ -42,7 +45,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     SampleCardComponent,
     ProjectSectionComponent,
     FaqSectionComponent,
-    MatExpansionModule
+    MatExpansionModule,
+    TestimonialCardComponent,
+    MatGridListModule
   ]
 })
 export class SharedModule { }
