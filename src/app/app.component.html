@@ -17,14 +17,7 @@
     </mat-drawer>
     <div class="container-general__content">
         <app-menu (isOpenMenuEmitter)="drawer.toggle()"></app-menu>
-        <!-- <div class="play-icon-container">
-            <div class="pulse"></div>
-            <div class="icon-background">
-                <mat-icon class="play-icon">play_arrow</mat-icon>
-            </div>
-        </div>
-        <div class="pulse-circle"></div>
-        <div class="animated-line"></div> -->
         <router-outlet></router-outlet>
+        <app-footer></app-footer>
     </div>
   </mat-drawer-container>

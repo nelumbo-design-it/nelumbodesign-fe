@@ -1,0 +1,33 @@
+.services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.services ul li {
+    position: relative;
+    transition: color 0.4s ease;
+    cursor: pointer;
+}
+
+.services ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.services ul li:hover {
+    padding-left: 20px;
+    color: red;
+}
+
+.services ul li:hover::before {
+    opacity: 1;
+}

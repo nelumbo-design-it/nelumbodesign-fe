@@ -13,6 +13,7 @@ import { FaqSectionComponent } from './components/faq-section/faq-section.compon
 import {MatExpansionModule} from '@angular/material/expansion';
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { BlogCardComponent } from './components/blog-card/blog-card.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     SampleCardComponent,
     ProjectSectionComponent,
     FaqSectionComponent,
-    TestimonialCardComponent
+    TestimonialCardComponent,
+    BlogCardComponent
   ],
   imports: [
     CommonModule,
@@ -47,7 +49,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     FaqSectionComponent,
     MatExpansionModule,
     TestimonialCardComponent,
-    MatGridListModule
+    MatGridListModule,
+    BlogCardComponent
   ]
 })
 export class SharedModule { }
