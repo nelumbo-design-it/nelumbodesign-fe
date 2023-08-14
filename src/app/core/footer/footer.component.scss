@@ -1,33 +1,41 @@
-.services ul {
-    list-style-type: none;
-    padding-left: 0;
+ul li {
+    margin-bottom: 14px;
 }
 
-.services ul li {
-    position: relative;
-    transition: color 0.4s ease;
-    cursor: pointer;
-}
-
-.services ul li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 6px;
-    height: 6px;
-    background-color: red;
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.services ul li:hover {
-    padding-left: 20px;
-    color: red;
+.services {
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+            position: relative;
+            cursor: pointer;
+            transition: all 1s ease;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                background-color: #DD4242;
+                border-radius: 50%;
+                opacity: 0;
+                transition: all 1s ease;
+            }
+            &:hover {
+                padding-left: 20px;
+                color: #DD4242;
+            }
+        }
+    }
 }
 
 .services ul li:hover::before {
     opacity: 1;
+}
+
+.title-section {
+    font-size: 26px;
+    margin-bottom: 30px;
 }

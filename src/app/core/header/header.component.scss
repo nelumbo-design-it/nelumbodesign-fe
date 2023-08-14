@@ -14,15 +14,21 @@
             }
             &__animation {
                 transform: rotate(90deg);
-                // margin-left: 500px;
-                color: white;
-                p {
-                    transform: rotate(180deg)
+                color: #B5B5B5;
+                a {
+                    color: white;
+                    transform: rotate(180deg);
+                    text-decoration: none;
                 }
             }
         }
         &__title {
-
+            &__top {
+                font-size: 26px;
+            }
+            h1 {
+                font-size: 48px;
+            }
         }
     }
     &__container-image {

@@ -19,5 +19,11 @@
         <app-menu (isOpenMenuEmitter)="drawer.toggle()"></app-menu>
         <router-outlet></router-outlet>
         <app-footer></app-footer>
+        <div class="container-general__content__top-button position-fixed" (click)="scrollToTop()">
+            <div class="container-general__content__top-button__cont-img position-relative">
+                <img class="container-general__content__top-button__cont-img__arrow" src="./assets/images/expand_less_icon.svg" alt="">
+                <img class="container-general__content__top-button__cont-img__line" src="./assets/images/remove_icon.svg" alt="">
+            </div>
+        </div>
     </div>
   </mat-drawer-container>
