@@ -14,7 +14,8 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #DD4242; /* Colore del cerchio, puoi personalizzarlo */
+  // background-color: rgb(239,65,54);
+  background-color: rgb(244, 107, 58);
   border-radius: 50%; /* Rende il div un cerchio */
   animation: pulse 2s infinite; /* Applica l'animazione */
 }

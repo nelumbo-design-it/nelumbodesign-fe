@@ -11,7 +11,19 @@
 }
 
 .text-red {
-    color: #DD4242;
+    color: rgb(239,65,54);
+}
+
+.text-orange {
+    color: rgb(244, 107, 58);
+}
+
+.text-gradient {
+    background-image: linear-gradient(90deg, rgb(239,65,54) 0%, rgb(251,176,64) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
 }
 
 .bg-white {
@@ -24,8 +36,19 @@
 
 .bg-blue {
     background-color: #111319;
+    // background-color: rgb(40, 49, 73);
 }
 
 .bg-red {
-    background-color: #DD4242;
+    background-color: rgb(239,65,54);
+}
+
+.bg-orange {
+    background-color: rgb(244, 107, 58);
+    // background-color: rgb(214, 137, 20);
+}
+
+.bg-gradient {
+    background: rgb(239,65,54);
+    background: linear-gradient(90deg, rgba(239,65,54,1) 0%, rgba(251,176,64,1) 100%);
 }

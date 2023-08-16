@@ -5,9 +5,15 @@
 }
 
 .width-28 {
-    width: 28%;
+    width: 100%;
+    @media (min-width: 768px){
+        width: 28%;
+    }
 }
 
 .width-44 {
-    width: 44%;
+    width: 100%;
+    @media (min-width: 768px){
+        width: 44%;
+    }
 }

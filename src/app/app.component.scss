@@ -14,12 +14,16 @@
             width: 45px;
             height: 45px;
             border-radius: 50%;
-            background-color: #DD4242;
+            // background-color: rgb(244, 107, 58);
+            background: rgb(239,65,54);
+            background: linear-gradient(90deg, rgba(239,65,54,1) 0%, rgba(251,176,64,1) 100%);        
             cursor: pointer;
             overflow: hidden;
             transition: all .5s ease-in-out;
             &:hover {
-                background-color: #6b6b6b;
+                // background: #6b6b6b;
+                background: rgb(253,29,29);
+                background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(159,15,15,1) 100%);
             }
             &__cont-img {
                 width: 100%;

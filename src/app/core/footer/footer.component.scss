@@ -18,14 +18,14 @@ ul li {
                 transform: translateY(-50%);
                 width: 6px;
                 height: 6px;
-                background-color: #DD4242;
+                background-color: rgba(239,65,54,1);
                 border-radius: 50%;
                 opacity: 0;
                 transition: all 1s ease;
             }
             &:hover {
                 padding-left: 20px;
-                color: #DD4242;
+                color: rgba(239,65,54,1);
             }
         }
     }

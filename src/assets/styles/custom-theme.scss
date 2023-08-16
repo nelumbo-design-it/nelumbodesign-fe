@@ -1,7 +1,7 @@
 @import '@angular/material/theming';
 
 $custom-primary: mat-palette($mat-indigo, 700);
-$custom-accent:  mat-palette($mat-pink, A200, A100, A400);
+$custom-accent:  mat-palette($mat-orange, A200, A100, A400);
 $custom-warn:    mat-palette($mat-red);
 
 $light-theme: mat-light-theme(

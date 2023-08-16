@@ -1,5 +1,5 @@
 .container-card-blog {
-    border: 1px solid #DD4242;
+    border: 1px solid rgb(244, 107, 58);
     overflow: hidden;
     transition: all 0.3s ease;
     height: 350px;
@@ -17,7 +17,7 @@
     &__container-text{
         padding: 30px;
         h3:hover {
-            color: #DD4242;
+            color: rgb(244, 107, 58);
             cursor: pointer;
         }
     }
