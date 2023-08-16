@@ -17,7 +17,11 @@
     &__container-text{
         padding: 30px;
         h3:hover {
-            color: rgb(244, 107, 58);
+            background-image: linear-gradient(90deg, rgb(251,176,64) 0%, rgb(248, 89, 31) 100%);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            display: inline-block;
             cursor: pointer;
         }
     }
