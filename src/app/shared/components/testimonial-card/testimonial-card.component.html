@@ -7,10 +7,10 @@
         <mat-icon class="ms-1">star_rate</mat-icon>
     </div>
     <div class="container-card-testimonial__text">
-        <p>Arcu bibendum at varius vel pharetra vel turpis. Sed enim ut sem viverra aliquet. Duis ut diam quam nulla porttitor massa id neque aliquam. Eget mi proin sed libero enim sed faucibus turpis. </p>
+        <p>{{ recensione }}</p>
     </div>
     <div class="container-card-testimonial__name d-flex align-items-center">
-        <img src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Home-1-Faq-Bg-Img-Ps.png" alt="">
-        <p class="mb-0 ms-4 font-prompt"><span class="text-orange font-prompt">Nome</span> Cognome</p>
+        <img [src]="image" [alt]="nome + ' ' + cognome">
+        <p class="mb-0 ms-4 font-prompt"><span class="text-orange font-prompt">{{ nome }}</span> {{ cognome }}</p>
     </div>
 </div>

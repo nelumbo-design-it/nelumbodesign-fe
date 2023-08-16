@@ -30,6 +30,12 @@ ul li {
         }
     }
 }
+a {
+    transition: all .7s ease;
+    &:hover {
+        color: rgba(239,65,54,1);
+    }
+}
 
 .services ul li:hover::before {
     opacity: 1;

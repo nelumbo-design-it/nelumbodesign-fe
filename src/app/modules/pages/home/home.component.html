@@ -2,7 +2,8 @@
     <app-header></app-header>
 </header>
 <main class="bg-blue text-white">
-    <section id="cta_services">
+    <!-- SKILLS -->
+    <section id="skills">
         <div class="container-xl d-flex flex-wrap justify-content-center container-card-services">
             <div class="container-card-services__card d-flex col-12 col-md-4 p-3">
                 <div class="p-2">
@@ -33,34 +34,42 @@
             </div>
         </div>
     </section>
-    <section>
+    <!-- END SKILLS -->
+    <!-- PORTFOLIO -->
+    <!-- <section>
         <app-title-section [text1]="'Galleria'" [text2]="'Il nostro portfolio'"></app-title-section>
         <app-project-section></app-project-section>
-    </section>
+    </section> -->
+    <!-- END PORTFOLIO -->
+    <!-- CTA -->
     <section class="container-cta py-5">
         <h2 class="col-12 col-md-8 m-auto p-3 p-md-0 pt-md-5">È il momento di <b class="text-gradient">elevare</b> la tua presenza digitale. Siamo qui per <b class="text-gradient">guidarti</b> verso l'eccellenza</h2>
     </section>
+    <!-- END CTA -->
+    <!-- SERVICES -->
     <section class="container-services pb-5">
         <app-title-section [text1]="'Servizi'" [text2]="'I nostri servizi'"></app-title-section>
         <div class="d-flex flex-wrap pb-5">
-            <div class="col-6 col-md-3 px-5 br-grey">
+            <div class="col-6 col-lg-3 px-5 br-grey">
                 <h3>Consulenza SEO</h3>
                 <p class="text-grey mt-4">Ottimizza la tua presenza online e raggiungi il tuo pubblico target con la nostra <b>esperta consulenza SEO</b>.</p>
             </div>
-            <div class="col-6 col-md-3 px-5 br-grey">
+            <div class="col-6 col-lg-3 px-5 br-grey">
                 <h3>Design e branding</h3>
                 <p class="text-grey mt-4">Dai vita al tuo brand con un design accattivante e memorabile.</p>
             </div>
-            <div class="col-6 col-md-3 px-5 br-grey bt-grey-mobile">
+            <div class="col-6 col-lg-3 px-5 br-grey bt-grey-mobile">
                 <h3>Sviluppo web</h3>
                 <p class="text-grey mt-4">Siti web responsive, veloci e user-friendly, progettati per convertire.</p>
             </div>
-            <div class="col-6 col-md-3 px-5 bt-grey-mobile">
+            <div class="col-6 col-lg-3 px-5 bt-grey-mobile">
                 <h3>Social media marketing</h3>
                 <p class="text-grey mt-4">Strategie di marketing sui social media per aumentare la tua visibilità e il tuo engagement.</p>
             </div>
         </div>
     </section>
+    <!-- END SERVICES -->
+    <!-- FAQ -->
     <section>
         <app-title-section [text1]="'FAQ\'s'" [text2]="'Rispondiamo alle tue domande'"></app-title-section>
         <div class="d-flex align-items-center position-relative justify-content-end">
@@ -70,15 +79,18 @@
             </div>
         </div>
     </section>
+    <!-- END FAQ -->
+    <!-- TESTIMONIAL -->
     <section>
         <app-title-section [text1]="'Feedback clienti'" [text2]="'Cosa dicono i nostri clienti'"></app-title-section>
-        <div class="container-xl d-flex flex-wrap">
-            <app-testimonial-card class="col-12 col-md-6"></app-testimonial-card>
-            <app-testimonial-card class="col-12 col-md-6"></app-testimonial-card>
-            <app-testimonial-card class="col-12 col-md-6"></app-testimonial-card>
-            <app-testimonial-card class="col-12 col-md-6"></app-testimonial-card>
+        <div class="container-xl d-flex flex-wrap pb-5">
+            <ng-container *ngFor="let testimonial of testimonials">
+                <app-testimonial-card class="col-12 col-md-6" [cognome]="testimonial.cognome" [image]="testimonial.image" [nome]="testimonial.nome" [recensione]="testimonial.recensione"></app-testimonial-card>
+            </ng-container>
         </div>
     </section>
+    <!-- END TESTIMONIAL -->
+    <!-- CASE STUDY -->
     <section class="container-contact-cover d-flex flex-column justify-content-end">
         <div class="pb-0">
             <div class="scrolling-text-container">
@@ -94,6 +106,8 @@
             </div>
         </div>
     </section>
+    <!-- END CASE STUDY -->
+    <!-- BLOG -->
     <section>
         <app-title-section [text1]="'Blog'" [text2]="'Ultime notizie'"></app-title-section>
         <div class="container-xl d-flex flex-wrap">
@@ -101,4 +115,5 @@
             <app-blog-card class="col-12 col-md-6 p-3"></app-blog-card>
         </div>
     </section>
+    <!-- END BLOG -->
 </main>
