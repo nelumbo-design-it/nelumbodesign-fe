@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center">
+    <nav>
+        <ng-container *ngFor="let breadcrumb of breadcrumbs$ | async; let last = last">
+          <ng-container *ngIf="!last">
+            <a class="font-prompt" [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a>
+            <span> / </span>
+          </ng-container>
+          <ng-container *ngIf="last">
+            <span class="font-prompt">
+                {{ breadcrumb.label }}
+            </span>
+          </ng-container>
+        </ng-container>
+      </nav>    
+</div>

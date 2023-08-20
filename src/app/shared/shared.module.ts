@@ -14,6 +14,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { BlogCardComponent } from './components/blog-card/blog-card.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { RouterModule } from '@angular/router';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 
 @NgModule({
@@ -24,7 +27,9 @@ import { BlogCardComponent } from './components/blog-card/blog-card.component';
     ProjectSectionComponent,
     FaqSectionComponent,
     TestimonialCardComponent,
-    BlogCardComponent
+    BlogCardComponent,
+    BreadcrumbComponent,
+    TimelineComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +39,8 @@ import { BlogCardComponent } from './components/blog-card/blog-card.component';
     MatIconModule,
     MatListModule,
     MatExpansionModule,
-    MatGridListModule
+    MatGridListModule,
+    RouterModule
   ], 
   exports: [
     MatToolbarModule,
@@ -50,7 +56,9 @@ import { BlogCardComponent } from './components/blog-card/blog-card.component';
     MatExpansionModule,
     TestimonialCardComponent,
     MatGridListModule,
-    BlogCardComponent
+    BlogCardComponent,
+    BreadcrumbComponent,
+    TimelineComponent
   ]
 })
 export class SharedModule { }

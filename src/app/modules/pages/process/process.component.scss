@@ -1,0 +1,18 @@
+.container-header {
+    padding: 100px 0;
+    &__description {
+        border: 2px solid rgb(244, 107, 58);
+        border-right: none;
+        height: 80%;
+    }
+    &__image {
+        max-height: 550px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+        }
+    }
+}
