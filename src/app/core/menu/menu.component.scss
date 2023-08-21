@@ -45,10 +45,16 @@ mat-toolbar {
         color: white;
       }
     }
-  }
-  .mat-mdc-outlined-button:not(:disabled) {
-    border-color: rgb(244, 154, 58);
-    color: white !important;
+    &__call {
+      font-weight: 600;
+      transition: all 0.5s ease-in-out;
+      color: white!important;
+      border: 1px solid rgb(244, 154, 58);
+      padding: 7px 20px;
+      &:hover {
+        background-color: rgba(244, 154, 58, 0.8);
+      }
+    }
   }
 }
 

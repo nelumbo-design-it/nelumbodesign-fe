@@ -11,7 +11,8 @@ export class HeaderComponent implements OnInit{
   ngOnInit(): void {
     this.animeJS();
   }
-  animeJS() {
+
+  private animeJS() {
     const pathEls: any = document.querySelectorAll('path');
     for (let i = 0; i < pathEls.length; i++) {
       const pathEl: any = pathEls[i];
@@ -21,7 +22,7 @@ export class HeaderComponent implements OnInit{
         targets: pathEl,
         strokeDashoffset: [offset, 0],
         duration: anime.random(1000, 3000),
-        delay: anime.random(0, 2000),
+        delay: anime.random(0, 5000),
         loop: true,
         direction: 'alternate',
         easing: 'easeInOutSine',

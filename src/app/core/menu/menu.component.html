@@ -1,8 +1,8 @@
-<div class="bg-blue border-bottom">
+<div class="bg-blue">
   <div class="container-xl">
     <mat-toolbar class="d-flex justify-content-between">
       <span class="logo">
-        <a href="/">
+        <a routerLink="/">
           <img
             src="../../../assets/images/logo/nelumbo_design.svg"
             alt="Logo | Nelumbo Design"
@@ -11,9 +11,9 @@
         </a>
       </span>
       <span class="menu-items d-none d-md-flex">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
+        <a class="cursor-pointer" routerLink="/">Home</a>
+        <a class="cursor-pointer" routerLink="/blog">Blog</a>
+        <a class="cursor-pointer" routerLink="/services">Services</a>
       </span>
       <span class="cta-button">
         <button
@@ -24,9 +24,10 @@
         >
           <mat-icon>menu</mat-icon>
         </button>
-        <button class="d-none d-md-block font-prompt" mat-stroked-button color="accent">
-          CTA Button
-        </button>
+        <a class="cta-button__call d-none d-md-flex font-prompt text-uppercase text-white text-decoration-none" href="tel:+">
+          <mat-icon class="me-2">phone</mat-icon>
+          Chiama ora!
+        </a>
       </span>
     </mat-toolbar>
   </div>

@@ -58,7 +58,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     MatGridListModule,
     BlogCardComponent,
     BreadcrumbComponent,
-    TimelineComponent
+    TimelineComponent,
+    RouterModule
   ]
 })
 export class SharedModule { }

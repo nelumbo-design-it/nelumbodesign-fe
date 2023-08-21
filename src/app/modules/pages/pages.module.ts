@@ -6,12 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { CoreModule } from 'src/app/core/core.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProcessComponent } from './process/process.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    ProcessComponent
+    ProcessComponent,
+    BlogComponent
   ],
   imports: [
     CommonModule,
