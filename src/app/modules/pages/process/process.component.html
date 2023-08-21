@@ -29,10 +29,13 @@
   </section>
   <section>
     <app-title-section [text1]="'Know Us'" [text2]="'What Kind Of Service We Offer'"></app-title-section>
-    <div class="container-xl">
+    <div class="container-xl pt-5">
       <ng-container *ngFor="let data of dataTimeline; let idx = index">
         <app-timeline [dataTimeline]="data" [isEven]="(idx % 2) === 0" [isLast]="(dataTimeline.length - 1) === idx"></app-timeline>
       </ng-container>
     </div>
+  </section>
+  <section class="container-xl">
+    <p class="mb-0 py-5 text-grey">Kurabitur ac interdum ex, ut porttitor augue. Maecenas nibh ligula, bibendum sit amet tristique id, semper at odio. Maecenas ornare porta lobortis. Pellentesque vestibulum non magna in sagittis. Nunc est magna, luctus quis arcu quis, tempor laoreet lorem. Donec vestibulum pretium eros, sed sollicitudin est aliquam sed. Aliquam id lacus imperdiet, hendrerit velit eu, eleifend nulla. Maecenas pharetra turpis diam, vitae venenatis velit laoreet eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris quis semper ligula, in eleifend tellus. Donec rutrum sem non placerat ultrices. Suspendisse fringilla leo et neque malesuada suscipit eu ac elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ligula lectus, egestas sit amet lorem vitae.</p>
   </section>
 </main>
