@@ -1,24 +1,30 @@
-<div class="container-timeline position-relative pb-5">
-    <div class="d-flex">
-        <div class="col-5 container-timeline__image-left ps-5">
-            <img class="w-100" src="https://gaaga.wpengine.com/wp-content/uploads/2023/05/Gaaga-Process-Img-1.png" alt="">
+<ng-container *ngIf="dataTimeline">
+    <ng-container *ngIf="isEven; else even">
+        <div class="container-timeline position-relative pb-5" [ngClass]="isLast ? 'separatore-last' : 'separatore'">
+            <div class="d-flex">
+                <div class="col-5 container-timeline__image ps-5">
+                    <img *ngIf="dataTimeline.image" class="w-100" [src]="dataTimeline.image" [alt]="dataTimeline.title">
+                </div>
+                <div class="offset-2 col-5 container-timeline__description">
+                    <p *ngIf="dataTimeline.number" class="container-timeline__description__number font-prompt" [innerHTML]="dataTimeline.number"></p>
+                    <p *ngIf="dataTimeline.title" class="container-timeline__description__title font-prompt" [innerHTML]="dataTimeline.title"></p>
+                    <p *ngIf="dataTimeline.description" class="container-timeline__description__desc text-grey pe-5" [innerHTML]="dataTimeline.description"></p>
+                </div>
+            </div>
         </div>
-        <div class="offset-2 col-5 container-timeline__description-left">
-            <p class="container-timeline__description-left__number font-prompt">01</p>
-            <p class="container-timeline__description-left__title font-prompt">Gather The Ideas</p>
-            <p class="container-timeline__description-left__desc text-grey pe-5">Ued vehicula mattis purus. Curabitur at pretium odio, sit amet tincidunt erat. Pellentesque fringilla rutrum nisl, nec vulputate libero mattis vel. Integer bibendum metus ac metus varius, eget vestibulum arcu.</p>
+    </ng-container>
+    <ng-template #even>
+        <div class="container-timeline position-relative pb-5" [ngClass]="isLast ? 'separatore-last' : 'separatore'">
+            <div class="d-flex">
+                <div class="col-5 container-timeline__description ps-5">
+                    <p *ngIf="dataTimeline.number" class="container-timeline__description__number font-prompt" [innerHTML]="dataTimeline.number"></p>
+                    <p *ngIf="dataTimeline.title" class="container-timeline__description__title font-prompt" [innerHTML]="dataTimeline.title"></p>
+                    <p *ngIf="dataTimeline.description" class="container-timeline__description__desc text-grey" [innerHTML]="dataTimeline.description"></p>
+                </div>
+                <div class="offset-2 col-5 container-timeline__image pe-5">
+                    <img *ngIf="dataTimeline.image" class="w-100" [src]="dataTimeline.image" [alt]="dataTimeline.title">
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<div class="container-timeline position-relative pb-5">
-    <div class="d-flex">
-        <div class="col-5 container-timeline__description-left ps-5">
-            <p class="container-timeline__description-left__number font-prompt">01</p>
-            <p class="container-timeline__description-left__title font-prompt">Gather The Ideas</p>
-            <p class="container-timeline__description-left__desc text-grey">Ued vehicula mattis purus. Curabitur at pretium odio, sit amet tincidunt erat. Pellentesque fringilla rutrum nisl, nec vulputate libero mattis vel. Integer bibendum metus ac metus varius, eget vestibulum arcu.</p>
-        </div>
-        <div class="offset-2 col-5 container-timeline__image-left pe-5">
-            <img class="w-100" src="https://gaaga.wpengine.com/wp-content/uploads/2023/05/Gaaga-Process-Img-1.png" alt="">
-        </div>
-    </div>
-</div>
+    </ng-template>
+</ng-container>

@@ -1,4 +1,4 @@
-<header class="bg-blue text-white">
+<header class="bg-blue text-white pt-5">
   <h1 class="text-center">Process</h1>
   <app-breadcrumb></app-breadcrumb>
 </header>
@@ -29,8 +29,10 @@
   </section>
   <section>
     <app-title-section [text1]="'Know Us'" [text2]="'What Kind Of Service We Offer'"></app-title-section>
-    <div>
-      <app-timeline></app-timeline>
+    <div class="container-xl">
+      <ng-container *ngFor="let data of dataTimeline; let idx = index">
+        <app-timeline [dataTimeline]="data" [isEven]="(idx % 2) === 0" [isLast]="(dataTimeline.length - 1) === idx"></app-timeline>
+      </ng-container>
     </div>
   </section>
 </main>

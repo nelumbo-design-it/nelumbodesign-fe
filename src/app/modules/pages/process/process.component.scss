@@ -8,6 +8,8 @@
     &__image {
         max-height: 550px;
         img {
+            -webkit-box-shadow: 13px 13px 25px -10px rgba(255,255,255,0.1); 
+            box-shadow: 13px 13px 25px -10px rgba(255,255,255,0.1);
             height: 100%;
             width: 100%;
             object-fit: cover;

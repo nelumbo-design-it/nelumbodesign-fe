@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-timeline',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent {
-
+  @Input() isLast: boolean = false;
+  @Input() isFirst: boolean = false;
+  @Input() isEven: boolean = false;
+  @Input() dataTimeline: any;
 }
