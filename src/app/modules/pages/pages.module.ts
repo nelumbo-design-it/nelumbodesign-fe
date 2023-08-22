@@ -7,13 +7,15 @@ import { CoreModule } from 'src/app/core/core.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProcessComponent } from './process/process.component';
 import { BlogComponent } from './blog/blog.component';
+import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     ProcessComponent,
-    BlogComponent
+    BlogComponent,
+    BlogDetailsComponent
   ],
   imports: [
     CommonModule,

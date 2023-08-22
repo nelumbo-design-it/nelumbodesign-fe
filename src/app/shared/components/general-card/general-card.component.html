@@ -3,13 +3,11 @@
         <img class="container-card__image" [src]="dataCard.image" [alt]="dataCard.title">
         <div class="container-card__container-text position-absolute">
             <div class="container-card__container-text__data font-prompt text-orange">{{ dataCard.data | date: 'dd MMM yyyy' }}</div>
-            <div class="container-card__container-text__title font-prompt text-gradient-hover">{{ dataCard.title }}</div>
+            <div class="container-card__container-text__title font-prompt text-gradient-hover" [routerLink]="['/blog', dataCard.id]">{{ dataCard.title }}</div>
             <div class="container-card__container-text__description text-grey">{{ dataCard.description }}</div>
         </div>
     </div>
-    <div class="container-card-cta">
-        <a class="text-white text-decoration-none d-flex justify-content-center align-items-center" routerLink="">
-            <mat-icon>east</mat-icon>
-        </a>
-    </div>    
+    <a class="container-card-cta text-white text-decoration-none d-flex justify-content-center align-items-center" [routerLink]="['/blog', dataCard.id]">
+        <mat-icon>east</mat-icon> 
+    </a>
 </div>

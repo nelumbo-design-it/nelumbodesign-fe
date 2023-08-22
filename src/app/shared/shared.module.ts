@@ -18,6 +18,8 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { RouterModule } from '@angular/router';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { GeneralCardComponent } from './components/general-card/general-card.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { GeneralCardComponent } from './components/general-card/general-card.com
     MatListModule,
     MatExpansionModule,
     MatGridListModule,
-    RouterModule
+    RouterModule,
+    MatInputModule,
+    MatFormFieldModule
   ], 
   exports: [
     MatToolbarModule,
@@ -62,7 +66,9 @@ import { GeneralCardComponent } from './components/general-card/general-card.com
     BreadcrumbComponent,
     TimelineComponent,
     RouterModule,
-    GeneralCardComponent
+    GeneralCardComponent,
+    MatInputModule,
+    MatFormFieldModule
   ]
 })
 export class SharedModule { }

@@ -12,6 +12,6 @@ export class BlogCardComponent {
   constructor(private router: Router){}
 
   public goToRoute(): void {
-
+    this.router.navigate(['/blog', 1])
   }
 }

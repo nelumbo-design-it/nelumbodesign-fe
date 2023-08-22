@@ -4,13 +4,28 @@
 </header>
 <main class="bg-blue text-white">
     <section class="container-blog container-xl d-flex">
-        <div class="col-12 col-md-8 container-blog__card d-flex flex-wrap justify-content-between">
+        <div class="col-12 container-blog__card d-flex flex-wrap justify-content-between">
+            <ng-container *ngFor="let dataCard of dataCards">
+                <app-general-card class="col-12 col-md-6" [dataCard]="dataCard"></app-general-card>
+            </ng-container>
+        </div>
+        <!-- <div class="col-12 col-md-8 container-blog__card d-flex flex-wrap justify-content-between">
             <ng-container *ngFor="let dataCard of dataCards">
                 <app-general-card class="col-6" [dataCard]="dataCard"></app-general-card>
             </ng-container>
         </div>
         <div class="col-12 col-md-4 container-blog__side-search">
-
-        </div>
+            <div class="m-3 p-4" style="border: 1px solid rgb(255, 136, 0);">
+                <div>
+                    <form>
+                        <mat-form-field class="w-100" color="accent">
+                            <mat-label class="text-grey">Cerca</mat-label>
+                            <input class="text-white" type="text" matInput placeholder="Es. Nelumbo Design">
+                            <mat-icon class="text-grey" matSuffix>search</mat-icon>
+                          </mat-form-field>
+                    </form>
+                </div>
+            </div>
+        </div> -->
     </section>
 </main>

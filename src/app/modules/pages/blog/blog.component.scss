@@ -3,5 +3,19 @@
         margin-top: 100px;
         gap: 50px 0;
     }
-    &__side-search{}
+    &__side-search{
+        margin-top: 100px;
+    }
+}
+
+:host ::ng-deep {
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+        background-color: transparent;
+    }
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+        border-bottom-color: #B5B5B5;
+    }
+    .mdc-text-field--filled .mdc-line-ripple::after {
+        border-bottom-color: #B5B5B5;
+    }
 }
