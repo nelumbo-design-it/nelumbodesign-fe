@@ -17,6 +17,7 @@ import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { RouterModule } from '@angular/router';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { GeneralCardComponent } from './components/general-card/general-card.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     TestimonialCardComponent,
     BlogCardComponent,
     BreadcrumbComponent,
-    TimelineComponent
+    TimelineComponent,
+    GeneralCardComponent
   ],
   imports: [
     CommonModule,
@@ -59,7 +61,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     BlogCardComponent,
     BreadcrumbComponent,
     TimelineComponent,
-    RouterModule
+    RouterModule,
+    GeneralCardComponent
   ]
 })
 export class SharedModule { }

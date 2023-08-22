@@ -4,10 +4,12 @@
 </header>
 <main class="bg-blue text-white">
     <section class="container-blog container-xl d-flex">
-        <div class="container-blog__card">
-            
+        <div class="col-12 col-md-8 container-blog__card d-flex flex-wrap justify-content-between">
+            <ng-container *ngFor="let dataCard of dataCards">
+                <app-general-card class="col-6" [dataCard]="dataCard"></app-general-card>
+            </ng-container>
         </div>
-        <div class="container-blog__search">
+        <div class="col-12 col-md-4 container-blog__side-search">
 
         </div>
     </section>
