@@ -18,14 +18,14 @@ ul li {
                 transform: translateY(-50%);
                 width: 6px;
                 height: 6px;
-                background-color: rgba(239,65,54,1);
+                background-color: rgb(244, 107, 58);
                 border-radius: 50%;
                 opacity: 0;
                 transition: all 1s ease;
             }
             &:hover {
                 padding-left: 20px;
-                color: rgba(239,65,54,1);
+                color: rgb(244, 107, 58);
             }
         }
     }
@@ -33,7 +33,7 @@ ul li {
 a {
     transition: all .7s ease;
     &:hover {
-        color: rgba(239,65,54,1);
+        color: rgb(244, 107, 58);
     }
 }
 
@@ -44,4 +44,12 @@ a {
 .title-section {
     font-size: 26px;
     margin-bottom: 30px;
+}
+
+.container-contact {
+    a {
+        &:hover {
+            color: rgb(244, 107, 58);
+        }
+    }
 }

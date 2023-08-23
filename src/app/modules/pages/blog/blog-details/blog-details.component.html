@@ -1,19 +1,20 @@
 <header class="bg-blue text-white pt-5">
-    <h1 class="text-center">Efficient digital marketing platforms</h1>
+    <h1 class="text-center" [innerHTML]="blogPost.title"></h1>
     <app-breadcrumb></app-breadcrumb>
 </header>
 <main class="bg-blue text-white py-5">
     <div class="container-xl">
         <div class="text-center">
-            <img src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/blog-11.jpg" alt="">
+            <img [src]="blogPost.image" [alt]="blogPost.title">
         </div>
         <div class="text-center mt-5">
-            <h2 class="text-white">Phasellus faucibus scelerisque eleifend donec. Sit amet aliquam id diam. Scelerisque varius morbi enim nunc faucibus a pellentesque dictum.</h2>
-            <p class="text-grey my-5">Suspendisse aliquam mi et mi sagittis, ac congue orci volutpat. Cras sit amet lectus id magna scelerisque gravida nec eu lorem. Vestibulum at lectus venenatis, varius mauris quis, venenatis erat. Sed iaculis ultricies augue, ac tincidunt arcu tincidunt sit amet. ed commodo convallis nibh. Donec fermentum non nibh sit amet fringilla. Donec hendrerit dui eget justo imperdiet mollis. Vestibulum imperdiet euismod lorem vitae aliquam. Curabitur a nibh pulvinars pharetra nec non sem. Suspendisse potenti.</p>
+            <p class="text-grey my-5" [innerHTML]="blogPost.description"></p>
         </div>
-        <div class="text-center mt-5">
-            <h3 class="text-white">Curabitur Pellentesque Odio Magna</h3>
-            <p class="text-grey mt-5">Suspendisse aliquam mi et mi sagittis, ac congue orci volutpat. Cras sit amet lectus id magna scelerisque gravida nec eu lorem. Vestibulum at lectus venenatis, varius mauris quis, venenatis erat. Sed iaculis ultricies augue, ac tincidunt arcu tincidunt sit amet. ed commodo convallis nibh. Donec fermentum non nibh sit amet fringilla. Donec hendrerit dui eget justo imperdiet mollis. Vestibulum imperdiet euismod lorem vitae aliquam. Curabitur a nibh pulvinars pharetra nec non sem. Suspendisse potenti.</p>
-        </div>
+        <ng-container *ngFor="let paragraph of blogPost.list_paragraph">
+            <div class="mt-5">
+                <h3 class="text-center text-white" [innerHTML]="paragraph.title"></h3>
+                <p class="text-grey my-5" [innerHTML]="paragraph.description"></p>
+            </div>
+        </ng-container>
     </div>
 </main>
