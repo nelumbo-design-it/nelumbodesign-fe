@@ -1,5 +1,8 @@
 .container-header {
-    height: calc(100vh - 64px);
+    height: 60vh;
+    @media (min-width: 768px) {
+        height: calc(100vh - 64px);
+    }
     &__container-text {
         &__social {
             ul {
